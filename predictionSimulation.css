@@ -1,0 +1,125 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+#mapContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 100%;
+}
+
+#controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 220px;
+}
+
+#countryInput {
+    padding: 8px;
+    width: 200px;
+}
+
+#searchResults {
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.searchItem {
+    padding: 6px;
+    cursor: pointer;
+}
+
+.searchItem:hover {
+    background: #eee;
+}
+
+.countryTag {
+    display: inline-block;
+    background: #9932CC;
+    color: white;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.countryTag span {
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+#predictionContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    text-align: center;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#predictionBox {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+#nextButton, #resetButton {
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#goButton {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#simulationOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.overlayBox {
+    color: white;
+    font-size: 28px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    text-align: center;
+}

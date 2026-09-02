@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Simulation of Freshwater Scarcity</title>
+
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldHigh.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <link rel="stylesheet" href="predictionSimulation.css">
+</head>
+
+<body>
+    <div id="mapContainer">
+        <div id="chartdiv"></div>
+
+        <div id="controls">
+            <input id="countryInput" placeholder="Type a country...">
+            <div id="searchResults"></div>
+
+             <div id="selectedCountries"></div>
+            <div id="countryCounter">0/5</div>
+
+            <button id="goButton" disabled>Run Simulation</button>
+        </div>
+    </div>
+
+    <div id="predictionContainer">
+        <div id="predictionBox"></div>
+        <button id="nextButton" style="display:none">Next Country</button>
+        <button id="resetButton" style="display:none">Reset Simulation</button>
+    </div>
+
+
+    <div id="simulationOverlay">
+        <div class="overlayBox">Loading simulation...</div>
+    </div>
+
+    <script src="predictionSimulation.js"></script>
+</body>
+</html>
